@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(120deg, #020203,
+            #2d282b,
+            #4c4c4c,
+            #000000);
+
+    /* Fonte que peguei do adobefonts */
+font-family: "yerk", sans-serif;
+    font-variation-settings: 'wght' 500;
+
+   
+
+    font-weight: 200;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-size: 6em;
+    background-size: 300% 300%;
+    animation: animarGradiente 6s ease infinite;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.letter_color {
+    color: #202020;
+    transition: color 3s ease;
+    cursor: default;
+    margin-right: -0.1em;
+    padding: 0;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+
+.color1 {
+    --cor: #c694ff;
+}
+
+.color2 {
+    --cor: pink;
+}
+
+
+.color3 {
+    --cor: rgb(118, 206, 244);
+}
+
+.color4 {
+    --cor: rgb(234, 255, 42);
+}
+
+.letter_color:hover {
+    Color: var(--cor);
+    transition: color 0s;
+    text-shadow: 1px 1px 15px currentColor;
+}
+
+
+/* Qualquer animação usa keyframe. Seja foto ou etc. */
+@keyframes animarGradiente {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+    /* Efeito de looping usando 1 /1.25/ 1 */
+}
+
+.titulo{
+    animation: pulsar .99s infinite;
+}
+

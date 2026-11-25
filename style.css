@@ -1,0 +1,49 @@
+body {
+    background-color: #fff;
+    animation: planodefundo 5s ease forwards;
+}
+
+/* Esse código funciona só tá comentado */
+/* @keyframes planodefundo {
+    from {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    }
+
+    to {
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+} */
+
+.gradiente {
+  width: 100%;
+  height: 200px;
+
+  background: linear-gradient(
+    120deg,
+    #7928ca,
+    #ff0080,
+    #00d4ff,
+    #7928ca
+  );
+
+  background-size: 300% 300%;
+
+  animation: animargradiente 6s ease infinite;
+}
+
+
+/* 
+@keyframes animargradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
